@@ -379,3 +379,70 @@ input.form-control:focus, textarea.form-control:focus {
     color: #555;
     font-size: 16px;
 }
+
+.footer {
+    background-color: var(--primary);
+    margin: 0% !important;
+    color: white;
+    padding: 40px 0;
+    width: 100%;
+}
+
+.footer-top {
+    background-color: var(--primary);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.footer a {
+    color: #b0b0b0;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+.footer h6 {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.footer .contact-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-bottom {
+    background-color: var(--primary);
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+    color: #b0b0b0;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.social-icons a {
+    font-size: 18px;
+    margin-right: 15px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .footer .col-md-3 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .footer .contact-info {
+        justify-content: center;
+    }
+}
