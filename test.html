@@ -3,96 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Feedback Analysis Model</title>
+    <title>Customer Sentiment Insights</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
         }
-        .section-title {
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
             text-align: center;
+        }
+
+        h1 {
+            font-size: 28px;
             font-weight: bold;
-            margin-bottom: 10px;
+            color: #212529;
         }
-        .section-subtitle {
-            text-align: center;
-            color: #666;
-            font-size: 18px;
-            margin-bottom: 40px;
+
+        p {
+            font-size: 16px;
+            color: #6c757d;
+            margin-bottom: 30px;
         }
-        .card {
-            border: none;
-            transition: 0.3s ease-in-out;
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-content: center;
         }
-        .card img {
-            border-radius: 10px;
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
+
+        .grid-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
         }
-        .card:hover {
+
+        .grid-item:hover {
             transform: translateY(-5px);
-            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
         }
-        .card-title {
+
+        .grid-item a {
+            text-decoration: none;
+            color: #007bff;
             font-weight: bold;
-            margin-top: 15px;
+            font-size: 16px;
+            margin-left: 10px;
+            transition: color 0.3s;
         }
-        .card-text {
-            color: #555;
+
+        .grid-item a:hover {
+            color: #0056b3;
+        }
+
+        .checkmark {
+            font-size: 18px;
+            color: #28a745;
+        }
+
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
 
-    <div class="container py-5">
-        <h2 class="section-title">Who Can Benefit from Our Customer Feedback Analysis Model</h2>
-        <p class="section-subtitle">Our model helps businesses extract meaningful insights from customer feedback to enhance decision-making and improve customer satisfaction.</p>
+    <div class="container">
+        <h1>Analyze Customer Sentiment with Ease</h1>
+        <p>Gain deep insights into customer emotions and opinions. Use our sentiment analysis tools to understand feedback trends and make data-driven decisions.</p>
 
-        <div class="row">
-            <!-- Business Owners -->
-            <div class="col-md-6 col-lg-6 mb-4">
-                <div class="card">
-                    <img src="clg.png" alt="Business Owners">
-                    <div class="card-body">
-                        <h5 class="card-title">Education Institutions</h5>
-                        <p class="card-text">Gain actionable insights from customer feedback to refine products, services, and business strategies.</p>
-                    </div>
-                </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <span class="checkmark">✔</span>
+                <a href="#">Analyze Product Reviews</a>
             </div>
-
-            <!-- Marketing Teams -->
-            <div class="col-md-6 col-lg-6 mb-4">
-                <div class="card">
-                    <img src="marketing.jpg" alt="Marketing Teams">
-                    <div class="card-body">
-                        <h5 class="card-title">Marketing Teams</h5>
-                        <p class="card-text">Identify trends, customer sentiment, and brand perception to create data-driven marketing campaigns.</p>
-                    </div>
-                </div>
+            <div class="grid-item">
+                <span class="checkmark">✔</span>
+                <a href="#">Monitor Social Media Sentiment</a>
             </div>
-
-            <!-- Customer Support Teams -->
-            <div class="col-md-6 col-lg-6 mb-4">
-                <div class="card">
-                    <img src="customer.jpg" alt="Customer Support Teams">
-                    <div class="card-body">
-                        <h5 class="card-title">Customer Support Teams</h5>
-                        <p class="card-text">Understand common issues, improve response strategies, and enhance overall customer experience.</p>
-                    </div>
-                </div>
+            <div class="grid-item">
+                <span class="checkmark">✔</span>
+                <a href="#">Assess Customer Feedback</a>
             </div>
-
-            <!-- Product Managers -->
-            <div class="col-md-6 col-lg-6 mb-4">
-                <div class="card">
-                    <img src="owner.jpg" alt="Product Managers">
-                    <div class="card-body">
-                        <h5 class="card-title">Product Managers</h5>
-                        <p class="card-text">Analyze user feedback to prioritize feature enhancements and align product development with customer needs.</p>
-                    </div>
-                </div>
+            <div class="grid-item">
+                <span class="checkmark">✔</span>
+                <a href="#">Evaluate Support Tickets</a>
+            </div>
+            <div class="grid-item">
+                <span class="checkmark">✔</span>
+                <a href="#">Identify Market Trends</a>
+            </div>
+            <div class="grid-item">
+                <span class="checkmark">✔</span>
+                <a href="#">Detect Negative Sentiment Early</a>
+            </div>
+            <div class="grid-item">
+                <span class="checkmark">✔</span>
+                <a href="#">Improve Customer Experience</a>
+            </div>
+            <div class="grid-item">
+                <span class="checkmark">✔</span>
+                <a href="#">Sentiment-Based Business Strategies</a>
+            </div>
+            <div class="grid-item">
+                <span class="checkmark">✔</span>
+                <a href="#">Real-Time Sentiment Tracking</a>
             </div>
         </div>
     </div>
