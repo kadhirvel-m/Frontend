@@ -325,3 +325,57 @@ input.form-control:focus, textarea.form-control:focus {
         grid-template-columns: 1fr;
     }
 }
+
+.faq-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+.faq-title {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.accordion-item {
+    border: 1px solid var(--primary);
+    border-radius: 10px; 
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.accordion-item + .accordion-item {
+    border-top: 1px solid var(--primary) !important;
+}
+
+.accordion-button {
+    border-radius: 10px 10px 0 0; 
+}
+
+.accordion-body {
+    border-radius: 0 0 10px 10px; 
+}
+
+.accordion-button {
+    background-color: #f9f9f9;
+    font-weight: bold;
+    border-radius: 10px;
+    color: #333;
+    box-shadow: none;
+    padding: 15px;
+}
+.accordion-button:focus {
+    box-shadow: none;
+    outline: none;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #f0f0f0;
+    color: #000;
+}
+.accordion-body {
+    color: #555;
+    font-size: 16px;
+}
