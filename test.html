@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Customer Feedback Analysis</title>
+    <title>How to Use AI Feedback Analyzer</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f8f9fa;
+            background-color: #f9f9f9;
+            color: #222;
         }
         .container {
             text-align: center;
-            margin-top: 50px;
+            padding: 50px 15px;
         }
         .heading {
             font-size: 28px;
@@ -25,59 +26,103 @@
             color: #555;
             margin-bottom: 40px;
         }
-        .feature-box {
+        .steps-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            max-width: 1000px;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+        .step-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
             background: #fff;
             padding: 20px;
             border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease-in-out;
+            flex: 1;
+            min-width: 180px; /* Ensures responsiveness */
+            max-width: 200px;
         }
-        .feature-box:hover {
+        .step-box:hover {
             transform: translateY(-5px);
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
         }
-        .feature-icon {
-            font-size: 40px;
-            color: #007bff;
-            margin-bottom: 15px;
+        .step-icon {
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            background: #006d5b;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin-bottom: 10px;
         }
-        .feature-text {
+        .step-text {
             font-size: 16px;
             color: #444;
+            text-align: center;
+        }
+        .step-text a {
+            color: #006d5b;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .step-text a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 992px) {
+            .steps-container {
+                justify-content: center;
+            }
         }
         @media (max-width: 768px) {
-            .feature-box {
-                margin-bottom: 20px;
+            .steps-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .step-box {
+                max-width: 100%;
             }
         }
     </style>
 </head>
 <body>
 
-<div class="containerr">
-    <h2 class="heading">AI-Powered Customer Feedback Analysis</h2>
+<div class="container">
+    <h2 class="heading">How to Use AI Feedback Analyzer</h2>
     <p class="subtext">
-        Unlock valuable customer insights using AI-driven sentiment analysis and text summarization.
+        Easily analyze customer feedback with AI-powered insights. Just follow these simple steps.
     </p>
-    
-    <div class="row justify-content-center">
-        <div class="col-md-4 col-sm-6">
-            <div class="feature-box text-center">
-                <i class="bi bi-chat-square-text feature-icon"></i>
-                <p class="feature-text">Analyze customer feedback across multiple sources like surveys, reviews, and support tickets.</p>
-            </div>
+
+    <div class="steps-container">
+        <div class="step-box">
+            <div class="step-icon">1</div>
+            <p class="step-text">Type or paste the feedback into the input box.</p>
         </div>
-        <div class="col-md-4 col-sm-6">
-            <div class="feature-box text-center">
-                <i class="bi bi-graph-up feature-icon"></i>
-                <p class="feature-text">Identify trends, pain points, and sentiment patterns in real-time using AI insights.</p>
-            </div>
+        <div class="step-box">
+            <div class="step-icon">2</div>
+            <p class="step-text">Select either bullet point or paragraph format.</p>
         </div>
-        <div class="col-md-4 col-sm-6">
-            <div class="feature-box text-center">
-                <i class="bi bi-emoji-smile feature-icon"></i>
-                <p class="feature-text">Customize feedback reports with sentiment scores, recommendations, and data-driven decisions.</p>
-            </div>
+        <div class="step-box">
+            <div class="step-icon">3</div>
+            <p class="step-text">Choose a preferred sentiment analysis mode and click the “Analyze” button.</p>
+        </div>
+        <div class="step-box">
+            <div class="step-icon">4</div>
+            <p class="step-text">Review the AI-generated insights and make adjustments if needed.</p>
+        </div>
+        <div class="step-box">
+            <div class="step-icon">5</div>
+            <p class="step-text"><a href="#">Download the report</a> or integrate it into your business strategy.</p>
         </div>
     </div>
 </div>
