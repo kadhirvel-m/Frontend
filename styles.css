@@ -357,6 +357,7 @@ input.form-control:focus, textarea.form-control:focus {
 
 .accordion-body {
     border-radius: 0 0 10px 10px; 
+    text-align: left;
 }
 
 .accordion-button {
@@ -445,4 +446,71 @@ input.form-control:focus, textarea.form-control:focus {
     .footer .contact-info {
         justify-content: center;
     }
+}
+
+/* Chatbot Styling */
+.chatbot-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.chat-container {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 320px;
+    height: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    border: 1px solid #ccc;
+}
+.chat-header {
+    background: var(--primary);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px 10px 0 0;
+}
+.chat-body {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+    text-align: left;
+}
+.chat-footer {
+    display: flex;
+    border-top: 1px solid #ddd;
+    padding: 5px;
+    align-items: center;
+    background: #f9f9f9;
+}
+
+.chat-footer input {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 85%;
+}
+
+.chat-footer button {
+    border: none;
+    background: var(--primary);
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
 }
