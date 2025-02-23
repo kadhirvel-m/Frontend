@@ -2,131 +2,138 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>How to Use AI Feedback Analyzer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Customer Feedback Analysis</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f9f9f9;
-            color: #222;
-        }
-        .container {
-            text-align: center;
-            padding: 50px 15px;
-        }
-        .heading {
-            font-size: 28px;
-            font-weight: bold;
-            color: #222;
-        }
-        .subtext {
-            font-size: 18px;
-            color: #555;
-            margin-bottom: 40px;
-        }
-        .steps-container {
-            display: flex;
-            justify-content: space-between;
-            gap: 15px;
-            max-width: 1000px;
-            margin: auto;
-            flex-wrap: wrap;
-        }
-        .step-box {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            background: #fff;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease-in-out;
-            flex: 1;
-            min-width: 180px; /* Ensures responsiveness */
-            max-width: 200px;
-        }
-        .step-box:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-        }
-        .step-icon {
-            font-size: 20px;
-            font-weight: bold;
+            background-color: #121212;
             color: white;
-            background: #006d5b;
-            width: 35px;
-            height: 35px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-            margin-bottom: 10px;
+            font-family: Arial, sans-serif;
         }
-        .step-text {
-            font-size: 16px;
-            color: #444;
+
+        .main-content {
             text-align: center;
+            padding: 60px 20px;
         }
-        .step-text a {
-            color: #006d5b;
+
+        h1 {
+            font-size: 32px;
             font-weight: bold;
+        }
+
+        p {
+            font-size: 16px;
+            color: #b0b0b0;
+            margin-bottom: 30px;
+        }
+
+        .btn-signup {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            padding: 12px 20px;
+            border-radius: 8px;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: 0.3s;
+        }
+
+        .btn-signup:hover {
+            background-color: #f1f1f1;
+        }
+
+        .footer {
+            background-color: #000;
+            padding: 40px 0;
+        }
+
+        .footer a {
+            color: #b0b0b0;
             text-decoration: none;
+            font-size: 14px;
+            transition: 0.3s;
         }
-        .step-text a:hover {
-            text-decoration: underline;
+
+        .footer a:hover {
+            color: white;
         }
-        @media (max-width: 992px) {
-            .steps-container {
-                justify-content: center;
-            }
+
+        .footer .footer-title {
+            color: white;
+            font-weight: bold;
+            margin-bottom: 15px;
         }
+
+        .footer-bottom {
+            text-align: center;
+            font-size: 13px;
+            color: #b0b0b0;
+            margin-top: 20px;
+        }
+
         @media (max-width: 768px) {
-            .steps-container {
-                flex-direction: column;
-                align-items: center;
-            }
-            .step-box {
-                max-width: 100%;
+            .footer .col-md-3 {
+                margin-bottom: 20px;
             }
         }
     </style>
 </head>
 <body>
+    <div class="main-content">
+        <h1>AI-Powered Customer Feedback Analysis</h1>
+        <p>Unlock valuable insights from customer feedback. Use AI to analyze sentiments, detect trends, and enhance customer satisfaction.</p>
+        
+        <button class="btn-signup">Get Started →</button>
+        <button class="btn-signup">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" width="18"> 
+            Sign up with Google
+        </button>
 
-<div class="container">
-    <h2 class="heading">How to Use AI Feedback Analyzer</h2>
-    <p class="subtext">
-        Easily analyze customer feedback with AI-powered insights. Just follow these simple steps.
-    </p>
+        <p style="font-size: 12px; margin-top: 10px;">
+            By signing up, you agree to the <a href="#" style="color:#fff; text-decoration:underline;">Terms & Privacy Policy</a>.
+        </p>
+    </div>
 
-    <div class="steps-container">
-        <div class="step-box">
-            <div class="step-icon">1</div>
-            <p class="step-text">Type or paste the feedback into the input box.</p>
-        </div>
-        <div class="step-box">
-            <div class="step-icon">2</div>
-            <p class="step-text">Select either bullet point or paragraph format.</p>
-        </div>
-        <div class="step-box">
-            <div class="step-icon">3</div>
-            <p class="step-text">Choose a preferred sentiment analysis mode and click the “Analyze” button.</p>
-        </div>
-        <div class="step-box">
-            <div class="step-icon">4</div>
-            <p class="step-text">Review the AI-generated insights and make adjustments if needed.</p>
-        </div>
-        <div class="step-box">
-            <div class="step-icon">5</div>
-            <p class="step-text"><a href="#">Download the report</a> or integrate it into your business strategy.</p>
+    <div class="footer container">
+        <div class="row">
+            <div class="col-md-3">
+                <h6 class="footer-title">Features</h6>
+                <a href="#">Sentiment Analysis</a><br>
+                <a href="#">AI-Powered Chatbots</a><br>
+                <a href="#">Real-time Feedback Insights</a><br>
+                <a href="#">Automated Reports</a><br>
+            </div>
+            <div class="col-md-3">
+                <h6 class="footer-title">Solutions</h6>
+                <a href="#">Retail & E-commerce</a><br>
+                <a href="#">Healthcare</a><br>
+                <a href="#">Hospitality</a><br>
+                <a href="#">Finance & Banking</a><br>
+            </div>
+            <div class="col-md-3">
+                <h6 class="footer-title">Company</h6>
+                <a href="#">About Us</a><br>
+                <a href="#">Careers</a><br>
+                <a href="#">Contact</a><br>
+                <a href="#">Privacy Policy</a><br>
+            </div>
+            <div class="col-md-3">
+                <h6 class="footer-title">Follow Us</h6>
+                <a href="#">LinkedIn</a><br>
+                <a href="#">Twitter</a><br>
+                <a href="#">Facebook</a><br>
+                <a href="#">Instagram</a><br>
+            </div>
         </div>
     </div>
-</div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="footer-bottom">
+        <p>© 2025 AI Feedback Analytics Inc.</p>
+    </div>
 </body>
 </html>
