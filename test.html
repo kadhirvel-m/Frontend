@@ -2,138 +2,116 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Customer Feedback Analysis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Summarizer Examples</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         body {
-            background-color: #121212;
-            color: white;
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #222;
         }
-
-        .main-content {
-            text-align: center;
-            padding: 60px 20px;
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 50px 15px;
         }
-
-        h1 {
-            font-size: 32px;
+        .heading {
+            font-size: 28px;
             font-weight: bold;
+            text-align: center;
+            color: #222;
         }
-
-        p {
-            font-size: 16px;
-            color: #b0b0b0;
+        .subtext {
+            font-size: 18px;
+            color: #555;
+            text-align: center;
             margin-bottom: 30px;
         }
-
-        .btn-signup {
-            background-color: white;
-            color: black;
-            font-weight: bold;
-            padding: 12px 20px;
-            border-radius: 8px;
-            border: none;
-            display: inline-flex;
-            align-items: center;
+        .nav-tabs {
+            border-bottom: 2px solid #ddd;
             justify-content: center;
-            gap: 8px;
-            transition: 0.3s;
         }
-
-        .btn-signup:hover {
-            background-color: #f1f1f1;
+        .nav-link {
+            color: #555;
+            font-weight: 500;
         }
-
-        .footer {
-            background-color: #000;
-            padding: 40px 0;
-        }
-
-        .footer a {
-            color: #b0b0b0;
-            text-decoration: none;
-            font-size: 14px;
-            transition: 0.3s;
-        }
-
-        .footer a:hover {
-            color: white;
-        }
-
-        .footer .footer-title {
-            color: white;
+        .nav-link.active {
+            border-bottom: 2px solid #222;
+            color: #222;
             font-weight: bold;
-            margin-bottom: 15px;
         }
-
-        .footer-bottom {
-            text-align: center;
-            font-size: 13px;
-            color: #b0b0b0;
+        .content-box {
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
         }
-
-        @media (max-width: 768px) {
-            .footer .col-md-3 {
-                margin-bottom: 20px;
-            }
+        .content-box h5 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .content-box p {
+            font-size: 16px;
+            color: #444;
+            line-height: 1.6;
+        }
+        .source-link {
+            color: #0066cc;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .source-link:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="main-content">
-        <h1>AI-Powered Customer Feedback Analysis</h1>
-        <p>Unlock valuable insights from customer feedback. Use AI to analyze sentiments, detect trends, and enhance customer satisfaction.</p>
-        
-        <button class="btn-signup">Get Started →</button>
-        <button class="btn-signup">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" width="18"> 
-            Sign up with Google
-        </button>
 
-        <p style="font-size: 12px; margin-top: 10px;">
-            By signing up, you agree to the <a href="#" style="color:#fff; text-decoration:underline;">Terms & Privacy Policy</a>.
-        </p>
-    </div>
+<div class="container">
+    <h2 class="heading">Find Inspiration in These AI Summarizer Examples</h2>
+    <p class="subtext">
+        These summary examples were created with AI-powered assistance. Adjust any drafts to fit your needs and remember to cite the original source to avoid plagiarism.
+    </p>
 
-    <div class="footer container">
-        <div class="row">
-            <div class="col-md-3">
-                <h6 class="footer-title">Features</h6>
-                <a href="#">Sentiment Analysis</a><br>
-                <a href="#">AI-Powered Chatbots</a><br>
-                <a href="#">Real-time Feedback Insights</a><br>
-                <a href="#">Automated Reports</a><br>
-            </div>
-            <div class="col-md-3">
-                <h6 class="footer-title">Solutions</h6>
-                <a href="#">Retail & E-commerce</a><br>
-                <a href="#">Healthcare</a><br>
-                <a href="#">Hospitality</a><br>
-                <a href="#">Finance & Banking</a><br>
-            </div>
-            <div class="col-md-3">
-                <h6 class="footer-title">Company</h6>
-                <a href="#">About Us</a><br>
-                <a href="#">Careers</a><br>
-                <a href="#">Contact</a><br>
-                <a href="#">Privacy Policy</a><br>
-            </div>
-            <div class="col-md-3">
-                <h6 class="footer-title">Follow Us</h6>
-                <a href="#">LinkedIn</a><br>
-                <a href="#">Twitter</a><br>
-                <a href="#">Facebook</a><br>
-                <a href="#">Instagram</a><br>
-            </div>
+    <ul class="nav nav-tabs" id="summaryTabs">
+        <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="#report">Report Example</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#article">Article Example</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane fade show active content-box" id="report">
+            <h5>Prompt:</h5>
+            <p>Write a summary for senior marketing leaders of these findings on the persuasive nature of VR and AR video advertisements.</p>
+            
+            <h5>Summary generated by AI:</h5>
+            <p>A conceptual review suggests that virtual reality (VR) and augmented reality (AR) video advertisements can persuade consumer attitudes. Incorporating VR and AR technology can help build stronger brands, engage audiences, and provide unique experiences for customers using mobile devices.</p>
+            
+            <p>Six research propositions were identified to examine consumer attitude persuasion based on the literature. Variables like advertisement quality, demographic differences, and technological context in VR and AR ads facilitate central route persuasion. Meanwhile, factors like source credibility, social presence, and message content influence persuasion through the peripheral route. The study presents a method to analyze consumer attitudes using the ELM theory.</p>
+            
+            <p class="mt-3">*This summary came from an article titled <a href="#" class="source-link">"The persuasion effects of virtual reality (VR) and augmented reality (AR) video advertisements: A conceptual review."</a></p>
+        </div>
+
+        <div class="tab-pane fade content-box" id="article">
+            <h5>Prompt:</h5>
+            <p>Summarize the impact of AI-generated content on modern journalism.</p>
+            
+            <h5>Summary generated by AI:</h5>
+            <p>AI-generated content is transforming journalism by automating news writing, enhancing data-driven insights, and enabling real-time reporting. This shift reduces manual workload, allowing journalists to focus on investigative reporting and creative storytelling.</p>
+            
+            <p>However, challenges like misinformation, bias in AI models, and ethical concerns about authorship persist. Effective AI-human collaboration in newsrooms is essential to balance efficiency with editorial integrity.</p>
+            
+            <p class="mt-3">*This summary is based on a report from <a href="#" class="source-link">"The Future of AI in Journalism: Trends & Challenges."</a></p>
         </div>
     </div>
+</div>
 
-    <div class="footer-bottom">
-        <p>© 2025 AI Feedback Analytics Inc.</p>
-    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

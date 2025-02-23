@@ -23,19 +23,25 @@ p {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.navbar-nav{
+    gap: 15px;
+}
+
 .navbar-nav .nav-link {
     color: black;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
+    border-bottom: 1px solid transparent;
 }
 
 .navbar-nav .nav-link:hover {
     color: var(--primary);
+    border-bottom: 1px solid var(--primary);
 }
 
 .breadcrumb {
     background: none;
-    padding: 10px -150px !important;
+    padding: 10px 15px !important;
 }
 
 .breadcrumb-item a {
@@ -93,6 +99,7 @@ input.form-control:focus, textarea.form-control:focus {
 .free {
     background-color: var(--primary);
     color: white;
+    border: 1px solid var(--primary) !important;
 }
 
 .btn-primary:hover {
