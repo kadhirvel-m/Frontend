@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Summarizing Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo">
+                <img src="logo.png" alt="Grammarly Logo">
+            </div>
+            <div class="nav-links">
+                <a href="#">Product <i class="fa-solid fa-chevron-down"></i></a>
+                <a href="#">Work <i class="fa-solid fa-chevron-down"></i></a>
+                <a href="#">Education <i class="fa-solid fa-chevron-down"></i></a>
+                <a href="#">Pricing</a>
+                <a href="#">Resources <i class="fa-solid fa-chevron-down"></i></a>
+            </div>
+            </div>
+        <div class="nav-right">
+            <a href="#">Contact Sales</a>
+            <a href="#">My Grammarly</a>
+            <a href="#" class="button">Get Stack's It's free →</a>
+        </div>
+    </nav>
+
+    <div class="breadcrumbs">
+        <a href="#">ai</a> / <a href="#">ai-writing-tools</a> / <a href="#">summarizing-tool</a>
+    </div>
+
+    <main>
+        <div class="container">
+            <div class="summarizer-box">
+                <h2>Customer Sentiment Analyzer</h2>
+                <p>Unlock deep customer insights with our <strong>Customer Sentiment Analyzer</strong> —a powerful tool that analyzes feedback in real time to help you understand emotions, trends, and preferences effortlessly.</p>
+            
+                <form action="/" method="POST" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="file" class="form-label">Upload CSV:</label>
+                        <input type="file" class="form-control" name="file">
+                    </div>
+            
+                    <div class="text-center mb-3">or</div>
+            
+                    <div class="mb-3">
+                        <label for="feedback_text" class="form-label">Enter feedback manually:</label>
+                        <textarea name="feedback_text" class="form-control" rows="5"></textarea>
+                    </div>
+            
+                    <button type="submit" class="btn btn-primary w-100">Analyze</button>
+                </form>
+            </div>            
+
+            <div class="features-box">
+                <img src="Stack’S.png" alt="Features Illustration">
+                <h3>Access additional features</h3>
+                <p>Download Grammarly to improve your writing and instantly generate emails, documents, and more in your preferred voice.</p>
+                <button class="download">Get Grammarly It’s free →</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
